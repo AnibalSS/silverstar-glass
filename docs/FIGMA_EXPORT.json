@@ -1,0 +1,193 @@
+{
+  "colorTokens": {
+    "primary": {
+      "value": "#1F7FD9",
+      "description": "Primary brand blue, used for CTAs, links, hover states"
+    },
+    "accent": {
+      "value": "#4FC3F7",
+      "description": "Accent cyan, used sparingly for icons and highlights"
+    },
+    "background": {
+      "light": "#F7FBFF",
+      "base": "#FFFFFF",
+      "card": "#F5F7FA"
+    },
+    "text": {
+      "primary": "#22252A",
+      "muted": "#6F7782"
+    },
+    "border": {
+      "light": "#E3E8EF"
+    }
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": ["Poppins", "Inter", "system-ui", "sans-serif"],
+      "letterSpacing": "-0.5px",
+      "sizes": {
+        "h1": { "size": "48px–60px", "weight": 700 },
+        "h2": { "size": "36px–48px", "weight": 700 },
+        "h3": { "size": "24px–32px", "weight": 700 },
+        "h4": { "size": "18px–20px", "weight": 700 }
+      }
+    },
+    "body": {
+      "fontFamily": ["Inter", "Source Sans Pro", "system-ui", "sans-serif"],
+      "size": "16px",
+      "weight": 400,
+      "lineHeight": 1.6
+    }
+  },
+  "shadows": {
+    "soft": "0 4px 12px rgba(0, 0, 0, 0.08)",
+    "card": "0 2px 8px rgba(0, 0, 0, 0.06)",
+    "lift": "0 12px 24px rgba(0, 0, 0, 0.12)"
+  },
+  "components": {
+    "button": {
+      "primary": {
+        "background": "#1F7FD9",
+        "textColor": "#FFFFFF",
+        "padding": "12px 24px",
+        "borderRadius": "8px",
+        "fontWeight": 500,
+        "hoverState": {
+          "shadow": "0 12px 24px rgba(0, 0, 0, 0.12)",
+          "transform": "translateY(-2px)"
+        },
+        "transition": "300ms ease-out"
+      },
+      "secondary": {
+        "background": "transparent",
+        "border": "2px solid #1F7FD9",
+        "textColor": "#1F7FD9",
+        "padding": "12px 24px",
+        "borderRadius": "8px",
+        "hoverState": {
+          "background": "#1F7FD9",
+          "textColor": "#FFFFFF"
+        },
+        "transition": "300ms ease-out"
+      }
+    },
+    "card": {
+      "background": "#FFFFFF",
+      "border": "1px solid #E3E8EF",
+      "borderRadius": "12px–16px",
+      "shadow": "0 2px 8px rgba(0, 0, 0, 0.06)",
+      "padding": "24px",
+      "hoverState": {
+        "shadow": "0 12px 24px rgba(0, 0, 0, 0.12)",
+        "transform": "translateY(-4px)",
+        "borderColor": "#1F7FD9"
+      },
+      "transition": "300ms ease-out"
+    },
+    "input": {
+      "background": "#F5F7FA",
+      "border": "1px solid #E3E8EF",
+      "borderRadius": "8px",
+      "padding": "12px 16px",
+      "focusState": {
+        "ring": "2px",
+        "ringColor": "#1F7FD9"
+      }
+    }
+  },
+  "animations": {
+    "fadeInUp": {
+      "duration": "600ms",
+      "easing": "ease-out",
+      "transform": "translateY(20px) → translateY(0)",
+      "opacity": "0 → 1"
+    },
+    "scaleIn": {
+      "duration": "600ms",
+      "easing": "ease-out",
+      "transform": "scale(0.95) → scale(1)",
+      "opacity": "0 → 1"
+    },
+    "cardLift": {
+      "duration": "300ms",
+      "easing": "ease-out",
+      "transform": "translateY(-4px)",
+      "shadow": "card → lift"
+    },
+    "buttonHover": {
+      "duration": "200ms",
+      "transform": "translateY(-2px)",
+      "shadow": "add lift"
+    }
+  },
+  "spacing": {
+    "containerMaxWidth": "1280px",
+    "horizontalPadding": {
+      "mobile": "16px",
+      "tablet": "24px",
+      "desktop": "32px"
+    },
+    "verticalSectionPadding": "96px",
+    "componentGap": "24px–32px"
+  },
+  "accessibility": {
+    "minimumTouchTarget": "44px × 44px",
+    "colorContrastRatio": "≥4.5:1 for text",
+    "focusStates": "ring-2 ring-primary, visible outline",
+    "mobileAnimations": "simple fade/slide only, max 400ms"
+  },
+  "sections": {
+    "hero": {
+      "layout": "two-column (text left, image right)",
+      "background": "gradient #F7FBFF → #FFFFFF",
+      "animation": "text fade-in-up, image scale-in with delay"
+    },
+    "services": {
+      "layout": "3–5 card grid",
+      "cardCount": 5,
+      "animation": "staggered entrance on scroll"
+    },
+    "whyChooseUs": {
+      "layout": "two-column (text + pillars left, image right)",
+      "pillars": 4,
+      "badges": 4,
+      "background": "#F5F7FA or subtle gradient"
+    },
+    "gallery": {
+      "layout": "masonry or 3-column grid",
+      "itemCount": "6+",
+      "interaction": "hover zoom-in + overlay label"
+    },
+    "process": {
+      "layout": "4-step horizontal stepper",
+      "animation": "steps fade-in on scroll, staggered"
+    },
+    "testimonials": {
+      "layout": "3-column card grid",
+      "cardCount": 3,
+      "animation": "fade-in as they scroll into view"
+    },
+    "contact": {
+      "layout": "3 info cards + contact form",
+      "background": "gradient white → light blue",
+      "formFields": ["name", "email", "phone", "message"]
+    },
+    "footer": {
+      "background": "#22252A (dark charcoal)",
+      "textColor": "white",
+      "sections": ["brand", "services", "company", "contact"]
+    }
+  },
+  "responsiveBreakpoints": {
+    "mobile": "375px–640px",
+    "tablet": "641px–1024px",
+    "desktop": "1025px+"
+  },
+  "metadata": {
+    "projectName": "Silverstar Glass",
+    "description": "Modern, premium glass installation website for DFW",
+    "pageTitle": "Silverstar Glass | DFW Glass Installation & Repair",
+    "metaDescription": "Professional glass installation and repair for homes and businesses across DFW. Windows, mirrors, shower enclosures, and more.",
+    "lastUpdated": "2026-09-12"
+  }
+}
